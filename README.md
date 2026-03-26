@@ -22,26 +22,33 @@ Built with a clean UI and scalable backend, it focuses on performance, usability
 - API Resources
 
 ## 📁 Project Structure
+
+This project is organized as a main repository with two submodules:
+
 ```bash
 MyPelantikan/
-├── front-end/
-│ ├── assets/
-│ ├── components/
-│ ├── views/
-│ ├── router/
-│ ├── store/
-│ └── layouts/
+├── front-end/ (Submodule)
+│   ├── src/
+│   │   ├── assets/       # Styles and images
+│   │   ├── components/   # Reusable Vue components
+│   │   ├── views/        # Page components
+│   │   ├── router/       # Navigation configuration
+│   │   ├── state/        # Pinia state management
+│   │   └── layouts/      # Application layouts
+│   └── package.json
 │
-├── back-end/
-│ ├── app/
-│ │ ├── Models/
-│ │ ├── Http/
-│ │ │ ├── Controllers/
-│ │ │ └── Resources/
-│ ├── routes/api.php
-│ ├── database/
-│ └── config/
+├── back-end/ (Submodule)
+│   ├── app/
+│   │   ├── Models/       # Eloquent models
+│   │   ├── Http/
+│   │   │   ├── Controllers/ # API controllers
+│   │   │   └── Resources/   # API response formatting
+│   ├── routes/
+│   │   └── api.php       # Main API routes
+│   ├── database/         # Migrations and seeders
+│   └── config/           # Laravel configuration
 │
+├── .gitmodules           # Submodule configuration
 └── README.md
 ```
 ## ⚙️ Features
