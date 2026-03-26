@@ -15,6 +15,14 @@ Built with a clean UI and scalable backend, it focuses on performance, usability
 
 ## 🧱 Tech Stack
 
+**Frontend**
+- Vue 3
+- Pinia (State Management)
+- Vue Router (Navigation)
+- Axios (HTTP Client)
+- Bootstrap 5
+- Vuelidate (Validation)
+
 **Backend**
 - Laravel
 - Eloquent ORM
