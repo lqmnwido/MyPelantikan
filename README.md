@@ -66,8 +66,12 @@ Ensure you have the following installed:
 
 ### 1. Clone repository
 ```bash
-git clone https://github.com/lqmnweedo/mypelantikan.git
+git clone --recursive https://github.com/lqmnwido/mypelantikan.git
 cd mypelantikan
+```
+***If you have already cloned the repository without the `--recursive` flag, run the following command to initialize and update the submodules:*** 
+``` bash
+git submodule update --init --recursive
 ```
 
 ### 2. Backend (Laravel)
