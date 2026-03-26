@@ -133,7 +133,7 @@ This command uses `concurrently` to run the following services in parallel:
 ### 3. Frontend (Vue)
 ``` bash
 cd front-end
-npm install
+npm install --peer legacy
 ```
 
 ### 4. Configure Environment Variables
