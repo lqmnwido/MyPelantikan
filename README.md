@@ -133,28 +133,21 @@ This command uses `concurrently` to run the following services in parallel:
 ### 3. Frontend (Vue)
 ``` bash
 cd front-end
-npm install --peer legacy
+npm install --legacy-peer-deps
 ```
 
-### 4. Configure Environment Variables
+### Configure Environment Variables
 Create a `.env` file in the root directory. You can copy the contents from `.env.production` as a starting point:
 ```bash
 cp .env.production .env
 ```
 Open the `.env` file and adjust the following variables:
 
-#### Authentication Modes
-The project supports different authentication modes via `VUE_APP_DEFAULT_AUTH`:
-- **Fake Backend (Default)**: Set `VUE_APP_DEFAULT_AUTH=fakebackend`. This allows you to log in without a real API using:
-  - **Email**: `admin@themesbrand.com`
-  - **Password**: `123456`
-- **Real Backend**: Set `VUE_APP_DEFAULT_AUTH=authservice` (or as configured in your services) and provide the `VUE_APP_APIKEY`.
-
 #### API Configuration
 - `VUE_APP_APIKEY`: The base URL of your API (e.g., `http://{{api-url}}/api/v1/`)
 - `VUE_GAMBAR_URL`: The storage URL for images (e.g., `http://{{api-url}}/storage`)
 
-### 4. Run the Development Server
+### Run the Development Server
 Start the local development server with:
 ```bash
 npm run serve
